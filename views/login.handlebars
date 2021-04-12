@@ -1,17 +1,26 @@
-<h2>Login</h2>
-
+<div class ="shadow">
+    <img src="css/logotech.png" id = "logo-img">
+  </div>
+<div class = "shadow-login">
 <form class="form login-form">
   <div class="form-group">
-    <label for="email-login">email:</label>
-    <input class="form-input" type="text" id="email-login" />
+    <input class="form-input" type="text" id="email-login" placeholder="Email"/>
   </div>
   <div class="form-group">
-    <label for="password-login">password:</label>
-    <input class="form-input" type="password" id="password-login" />
+    <input class="form-input" type="password" id="password-login" placeholder="Password"/>
   </div>
   <div class="form-group">
-    <button class="btn btn-primary" type="submit">login</button>
+    <button class="btn btn-primary" type="submit">LOGIN</button>
   </div>
 </form>
+</div>
+{{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 
 <script src="/js/login.js"></script>
