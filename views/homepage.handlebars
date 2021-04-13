@@ -1,10 +1,41 @@
+<div class="nav-home">
+  <img src="css/logotech.png" id="img-home">
+  {{#if logged_in}}
+  <nav>
+    <button class="btn" id="logout">logout</button>
+  </nav>
+  {{/if}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</div>
+
 {{#each blogs as |blog| }}
 <div class="row align-center mb-5">
   <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{blog.title}}</h2>
+    <h2> {{blog.user.name}}</h2>
   </div>
   <div class="col-md-6">
-    <h3><a href="mailto:{{blog.description}}">{{blog.description}}</a></h3>
+    <h3><a href="mailto:{{blog.title}}">{{blog.title}}</a></h3>
+  </div>
+  <div class="col-md-6">
+    <h4>{{blog.description}}</h4>
+    {{#each blog.comments as |comment| }}
+    <h4>{{comment.comment}}</h4>
+    <h5>{{comment.user.name}}</h5>
+    {{/each}}
+    <form action = "/api/comment/{{blog.id}}" method = "POST">
+      <input type = "text" name = "comment"/>
+      <input type = "submit">
+    </form>
   </div>
 </div>
 {{/each}}
+
+<div>
+  <form action = "/api/blog" method="POST">
+    <input type = "text" name = "title"/>
+    <input type = "text" name = "description"/>
+    <input type = "submit"/>
+  </form>
+</div>

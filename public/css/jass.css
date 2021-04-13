@@ -1,6 +1,9 @@
 *{
   font-family: 'Roboto', sans-serif;
 }
+
+/* LOGIN PAGE */ 
+
 div.shadow {
   position:absolute;
   max-width:45%;
@@ -36,3 +39,23 @@ div.form-group{
   margin-left: 25%;
   margin-top: 10%;
 }
+
+#logout{
+  float: right;
+  margin-top: -3%;
+  margin-right: 2%;
+}
+/* HOME PAGE */ 
+.nav-home{
+  background-color: lightgrey;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  width: 100%;
+  
+}
+
+#img-home{
+  height: 60px;
+}
+
