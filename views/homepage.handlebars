@@ -12,10 +12,11 @@
 </div>
 
 {{!-- Blog --}}
+<h1 class = "newest-posts">Newest Posts</h1>
 {{#each blogs as |blog| }}
 <div class="blog-container">
   <div class="blog-title">
-    <h2><a id = "blog-anc" href="">{{blog.title}}</a></h2>
+    <h2><a id = "blog-anc" href="/blog/{{blog.id}}">{{blog.title}}</a></h2>
   </div>
   <div class="blog-description">
     <p>{{blog.description}}</p>

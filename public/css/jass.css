@@ -74,7 +74,9 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
-
+.newest-posts{
+  margin-left: 3%;
+}
 .posted-by{
   font-size: 12px;
   margin-left: 80%;
