@@ -47,15 +47,37 @@ div.form-group{
 }
 /* HOME PAGE */ 
 .nav-home{
-  background-color: lightgrey;
+  background-color: white;
   overflow: hidden;
   padding: 10px;
   box-shadow: 5px 10px 8px #888888;
   width: 100%;
-  
+  border-radius: 5px;  
 }
-
 #img-home{
   height: 60px;
 }
 
+
+/* BLOGS */ 
+
+.blog-container{
+  margin: auto;
+  width: 60%;
+  border-bottom: 1px dashed #888888;
+  padding: 10px;
+  margin-top: 2%;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.posted-by{
+  font-size: 12px;
+  margin-left: 80%;
+  margin-top: 5%;
+  font-style: italic;
+}
