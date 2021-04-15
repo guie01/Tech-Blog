@@ -1,7 +1,21 @@
+{{!-- Navbar --}}
+<div class="nav-home">
+  <img src="/public/css/logotech.png" class ="img-home">
+  {{#if logged_in}}
+  <nav>
+    <button class="btn" id="logout">logout</button>
+  </nav>
+  {{/if}}
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</div>
+
+{{!-- Blog --}}
 <h1 class = "newest-posts">Newest Posts</h1>
 <div class="blog-container">
   <div class="blog-title">
-    <h2><a id = "blog-anc" href="">{{blog.title}}</a></h2>
+    <h2><a id = "blog-anc" href="/blog/{{blog.id}}">{{blog.title}}</a></h2>
   </div>
   <div class="blog-description">
     <p>{{blog.description}}</p>
