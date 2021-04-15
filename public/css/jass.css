@@ -1,5 +1,5 @@
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bungee', cursive;
 }
 
 /* LOGIN PAGE */ 
@@ -25,7 +25,17 @@ div.shadow-login {
   max-width:45%;
   max-height:45%;
   top:45%;
-  left:45%;
+  left:30%;
+  overflow:visible;
+  padding-right: 5%;
+  border-right: 1px dashed black;
+}
+div.shadow-signup {
+  position:absolute;
+  max-width:15%;
+  max-height:45%;
+  top:45%;
+  left:55%;
   overflow:visible;
 }
 div.form-group{
@@ -40,9 +50,14 @@ div.form-group{
   margin-top: 10%;
 }
 
+#signup-btn{
+  margin-left: 22%;
+  margin-top: 5%;
+}
+
 #logout{
   float: right;
-  margin-top: -3%;
+  margin-top: -4%;
   margin-right: 2%;
 }
 /* HOME PAGE */ 
