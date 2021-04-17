@@ -1,0 +1,26 @@
+{{!-- Navbar --}}
+  
+  <nav class = "nav-home">
+    <div class="nav-wrapper">
+      <img src="css/logotech.png" class = "img-home">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class = "nav-li" href="/login">Home</a></li>
+        <li><a class = "nav-li" href="badges.html">My Profile</a></li>
+        <li><a class = "nav-li" href="/create">Create a Post</a></li>
+        <li><button class="btn" id="logout">logout</button></li>
+      </ul>
+    </div>
+  </nav>
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
+  {{!-- Create a blog --}}
+<h3>Create a Post!</h3>
+<div class = "blog-create">
+  <form action="/api/blog" method="POST">
+    <input class = "title-create"type="text" name="title" placeholder="Title" />
+    <input type="text" name="description" placeholder="Your Thoughts!"/>
+    <input type="submit" />
+  </form>
+</div>
