@@ -118,3 +118,15 @@ a:link {
   box-shadow: 5px 10px 8px #888888;
   border-radius: 5px;
 }
+
+/*Comment*/
+.comment-p{
+  font-size: 10px;
+  color:rgb(39, 182, 98);
+}
+.comm-by{
+  font-size: 10px;
+  color:rgb(39, 182, 98);
+  font-style: italic;
+  text-decoration: underline;
+}

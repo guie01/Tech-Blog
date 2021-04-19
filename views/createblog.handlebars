@@ -1,13 +1,13 @@
 {{!-- Navbar --}}
-  
   <nav class = "nav-home">
     <div class="nav-wrapper">
       <img src="css/logotech.png" class = "img-home">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a class = "nav-li" href="/login">Home</a></li>
-        <li><a class = "nav-li" href="badges.html">My Profile</a></li>
         <li><a class = "nav-li" href="/create">Create a Post</a></li>
+        {{#if logged_in}}
         <li><button class="btn" id="logout">logout</button></li>
+        {{/if}}
       </ul>
     </div>
   </nav>
